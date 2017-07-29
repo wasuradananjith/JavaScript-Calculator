@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Calculator</title>
+	<script type="text/javascript" src="js/myjs.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+
+<center>
+	<h1><span class="label label-default">My Calculator</span></h1>
+</center>
+
+<div id="calculator">
+	<center>
+		<!-- input boxes -->
+		<div class="input-group">
+		  <input id="number1" type="text" align="center" class="form-control" placeholder="Number 1" aria-describedby="basic-addon1">
+		</div>
+		<p>  </p>
+		<div class="input-group">
+		  <input id="number2" type="text" align="center" class="form-control" placeholder="Number 2" aria-describedby="basic-addon1">
+		</div>
+		<p>  </p>
+	</center>
+
+	
+	<center>
+		<!-- operators and other keys -->
+		<div class="btn-group" role="group" aria-label="...">
+		  <button type="button" class="btn btn-default" id="addition" onclick="choose(number1,number2,'+')">+</button>
+		  <button type="button" class="btn btn-default" id="subtract" onclick="choose(number1,number2,'-')">-</button>
+		  <button type="button" class="btn btn-default" id="multiply" onclick="choose(number1,number2,'x')">x</button>
+		  <button type="button" class="btn btn-default" id="division"onclick="choose(number1,number2,'/')">/</button>
+		  <button type="button" class="btn btn-default" id="modulus" onclick="choose(number1,number2,'%')">%</button>
+		</div>
+	</center>
+
+	<p> </p>
+	<center>
+		<!-- to display the answer -->
+		<h2><span class="label label-primary" id="answer">Answer</span></h2>
+	</center>
+	
+
+</div>
+
+</body>
+</html>
